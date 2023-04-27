@@ -94,20 +94,21 @@ body {
   transition: all 0.3s ease;
 }
 
-.fa_malt img {
+.fa-malt img {
   width: 40px;
   height: 40px;
+  margin-top: 5px;
 }
 
 .social-icons a:hover {
   color: #ccc;
 }
 
-.fa_malt {
+.fa-malt {
   transition: filter 0.3s ease;
 }
 
-.fa_malt:hover {
+.fa-malt:hover {
   filter: grayscale(100%) brightness(75%);
 }
 
@@ -134,10 +135,11 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.9) 100%
+
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0 0 0 / 30%) 0%,
+    rgba(0 0 0 / 90%) 100%
     ),
     url("photos/fond_hydro.jpg");
   background-size: cover;
@@ -192,7 +194,7 @@ body::before {
     font-size: 30px;
   }
 
-  .fa_malt img {
+  .fa-malt img {
     width: 30px;
     height: 30px;
   }
