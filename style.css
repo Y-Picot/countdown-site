@@ -17,15 +17,20 @@ main h1, header h1 {
 
 main h2, header h2 {
   font-family: 'Hind Vadodara', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 15px;
   font-weight: lighter;
+  font-size: 32px;
+  margin-bottom: 1vw;
+
+}
+
+main h2, main p {
+  text-align: center;
 }
 
 main p, header p {
   font-family: 'Fanwood Text', sans-serif;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 21px;
 }
 
 footer p {
@@ -33,7 +38,7 @@ footer p {
   font-style: normal;
 }
 
-/* Animation en fond */
+/* Le fond et son animation */
 body::before {
   content: "";
   position: fixed;
@@ -46,7 +51,7 @@ body::before {
       rgba(0 0 0 / 30%) 0%,
       rgba(0 0 0 / 90%) 100%
     ),
-    url("photos/fond_hydro.jpg");
+    url("photos/fond_hydro.webp");
   background-size: cover;
   animation: animate 5s ease-in-out forwards;
   transform: scale(1.1);
@@ -59,6 +64,7 @@ body::before {
   }
 }
 
+/* Element de la page */
 .container {
   width: 100%;
   height: 100%;
@@ -95,6 +101,12 @@ body::before {
   ); /* Remplacez 20vh et 5vh par les hauteurs réelles de votre en-tête et de votre pied de page. */
 }
 
+.countdown hr {
+  width: 30%;
+}
+
+/* Timer */
+
 /* .countdown-timer {
   display: flex;
   justify-content: center;
@@ -121,48 +133,41 @@ body::before {
  margin-top: 20px;
 }
 
-
-.social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.social-media h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
+/* Socials Icons */
 
 .social-icons {
   display: flex;
+  margin-top: 2svh;
+  padding: 10px;
 }
 
 .social-icons a {
-  color: #fff;
   margin: 0 10px;
-  font-size: 40px;
   transition: all 0.3s ease;
-}
-
-.fa-malt img {
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
 }
 
 .social-icons a:hover {
   color: #ccc;
 }
 
-.fa-malt {
+.icons img {
+  max-width: 100%;
+  height: auto;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
+
+.icons {
   transition: filter 0.3s ease;
 }
 
-.fa-malt:hover {
+.icons:hover {
   filter: grayscale(100%) brightness(75%);
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -179,51 +184,42 @@ footer p {
   color: #ccc;
 }
 
-.countdown hr {
-  width: 30%;
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  header h1, main h2 {
+    font-size: min(0.5rem + 5vw, 2rem);
+  }
 }
 
-/* Media Queries */
-
 @media screen and (max-width: 768px) {
-  /* .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  } */
 
   .title {
-    width: 80%;
-    padding-left: 1rem;
+    width: 90%;
+    padding-left: 0.34rem;
     padding-top: 1rem;
     text-align: left;
   }
 
-  .countdown h2 {
-    font-size: 30px;
+  .title p {
+    margin-top: 0.34rem;
   }
 
-  .countdown-timer div span {
+  .icons img {
+    height: min(15px + 4vw, 40px);
+    width: min(15px + 4vw, 40px);
+  }
+
+  /* .countdown-timer div span {
     font-size: 50px;
-  }
+  } */
 
-  .countdown-timer {
+  /* .countdown-timer {
     flex-wrap: wrap;
-  }
+  } */
 
-  .countdown-timer div {
+  /* .countdown-timer div {
     margin: 10px;
-  }
-
-  .social-icons a {
-    font-size: 30px;
-  }
-
-  .fa-malt img {
-    width: 30px;
-    height: 30px;
-  }
+  } */
 
   footer {
     flex-direction: column;
@@ -232,6 +228,7 @@ footer p {
   }
 
   footer p {
+    font-size: min(0.5rem + 5vw,  14px);
     text-align: center;
   }
 }
