@@ -59,16 +59,6 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 - Proposer des **pull requests** pour des améliorations
 - Partager vos idées dans les **discussions**
 
-## 📄 Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 👤 Auteur
-
----
-**Y-Picot** - [GitHub](https://github.com/Y-Picot)
----
-
 <details>
 <summary>📚 Documentation détaillée</summary>
 
@@ -120,6 +110,16 @@ countdown-site/
 ```
 
 </details>
+
+---
+
+## 📄 Licence
+
+Licence MIT - voir [LICENSE](LICENSE) pour les détails.
+
+## 👤 Auteur
+
+**Y-Picot** - [GitHub](https://github.com/Y-Picot)
 
 ---
 
