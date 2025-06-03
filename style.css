@@ -73,7 +73,8 @@ footer p {
 body::before {
   content: "";
   position: fixed;
-  top: 0;  left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image:
@@ -128,13 +129,12 @@ body::before {
 /* Section principale du countdown */
 .countdown {
   display: flex;
-  flex-direction: column;  align-items: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  
   /* Remplacez 20vh et 5vh par les hauteurs réelles de votre en-tête et de votre pied de page. */
   height: calc(100vh - 20vh - 5vh);
 }
-
 
 /* Ligne de séparation */
 .countdown hr {
@@ -263,13 +263,13 @@ body::before {
     align-items: center;
     padding-bottom: 1rem;
   }
-  
+
   /* Styles spécifiques pour le texte du footer en mobile */
   footer p {
     font-size: min(0.5rem + 5vw, 14px);
     text-align: center;
   }
-  
+
   /* Ajustement de la section titre */
   .title {
     width: 90%;
