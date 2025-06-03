@@ -1,104 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Configuration de base du document HTML -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!-- Métadonnées pour le référencement SEO -->
     <meta name="description"
-      content="I-Mergie, entreprise de développement de logiciels à Brest dirigée par Yann Picot, propose des services de développement de logiciel en freelance Python et Java." />
+      content="Page de compte à rebours pour le lancement d'un nouveau site web. Développement de logiciels et applications web par un développeur freelance." />
     <meta name="keywords"
-      content="Entreprise développement logiciel, Développeur indépendant, Développeur freelance, Yann Picot, I-Mergie, Brest, Développeur logiciel, Développeur, Développeur back-end, Développeur Python, Développeur Java" />
-
+      content="Développement logiciel, Développeur indépendant, Développeur freelance, countdown, compte à rebours, page d'attente" />    <!-- Titre de la page affiché dans l'onglet du navigateur -->
     <title>
-      I-Mergie - Entreprise de développement de logiciels et d'applications web
-      | Développeur freelance Python, Java
+      Nouveau site bientôt disponible | Compte à rebours
     </title>
-    <link rel="shortcut icon" href="photos/logo_new_darkblue.ico" />
+      <!-- Icône du site (favicon) -->
+    <link rel="shortcut icon" href="assets/logo-exemple.svg" type="image/svg+xml" />
 
-    <!-- Import API CSS -->
+    <!-- Import des polices Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!-- Import CSS -->
+    <!-- Import de la feuille de style personnalisée -->
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
+    <!-- En-tête avec logo et informations principales -->
     <header>
-      <div class="container">
+      <div class="container">        <!-- Logo de l'entreprise -->
         <img
           class="image"
-          src="photos/logo_new_lighblue.webp"
-          alt="Logo de l'entreprise I-Mergie"
-        />
+          src="assets/logo-exemple.svg"
+          alt="Logo de l'entreprise"
+        />        <!-- Titre et sous-titre -->
         <div class="title">
-          <h1>Développeur freelance Python, Java situé à Brest.</h1>
-          <p>I-Mergie, Yann Picot.</p>
+          <h1>Développeur freelance spécialisé en solutions web modernes.</h1>
+          <p>TechCorp Solutions, Alexandre Martin.</p>
         </div>
       </div>
     </header>
+    
+    <!-- Contenu principal de la page -->
     <main>
-      <section class="countdown">
+      <section class="countdown">        <!-- Description des services -->        
         <h2>
-          Je développe vos logiciels et vous forme et informe à propos de vos outils informatiques
-        </h2>
-        <hr />
-        <p class="paragraphe">
-          Nouveau design visible en fin d'année 2023
+          Développement d'applications sur mesure et conseil en transformation numérique
+        </h2>        <p class="paragraphe">
+          Nouveau design disponible fin 2028
         </p>
-        <!-- <div class="countdown-timer">
-          <div>
-            <span class="days"></span>
+          <!-- Compteur de temps restant -->
+        <div class="countdown-timer">
+          <div class="time-unit">
+            <span class="days">0</span>
             <div class="smalltext">Jours</div>
           </div>
-          <div>
-            <span class="hours"></span>
+          <div class="time-unit">
+            <span class="hours">0</span>
             <div class="smalltext">Heures</div>
           </div>
-          <div>
-            <span class="minutes"></span>
+          <div class="time-unit">
+            <span class="minutes">0</span>
             <div class="smalltext">Minutes</div>
           </div>
-          <div>
-            <span class="seconds"></span>
+          <div class="time-unit">
+            <span class="seconds">0</span>
             <div class="smalltext">Secondes</div>
           </div>
-        </div> -->
+        </div>
 
+        <!-- Ligne de séparation -->
+        <hr />
+          <!-- Liens vers les réseaux sociaux -->
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/yann-picot-993140151/" aria-label="LinkedIn de Yann Picot"
+          <a href="https://www.linkedin.com/in/exemple-developpeur/" aria-label="LinkedIn du développeur"
             rel="noopener noreferrer">
             <i class="icons">
-              <img src="photos/linkedin.webp" alt="Icone LinkedIn de Yann Picot" />
+              <img src="assets/social-linkedin.svg" alt="Icône LinkedIn" />
             </i>
           </a>
-          <a href="https://twitter.com/picot_yann" aria-label="Twitter de Yann Picot" rel="noopener noreferrer">
+          <a href="https://twitter.com/exemple_dev" aria-label="Twitter du développeur" rel="noopener noreferrer">
             <i class="icons">
-              <img src="photos/x.webp" alt="Icone Twitter de Yann Picot" />
+              <img src="assets/social-twitter.svg" alt="Icône Twitter" />
             </i>
           </a>
-          <a href="https://github.com/YTBeater" aria-label="GitHub de Yann Picot" rel="noopener noreferrer">
+          <a href="https://github.com/exemple-dev" aria-label="GitHub du développeur" rel="noopener noreferrer">
             <i class="icons">
-              <img src="photos/github.webp" alt="Icone GitHub de Yann Picot" />
+              <img src="assets/social-github.svg" alt="Icône GitHub" />
             </i>
           </a>
-          <a href="https://www.malt.fr/profile/yannpicot" aria-label="Profil Malt de Yann Picot"
+          <a href="https://www.malt.fr/profile/exemple-developpeur" aria-label="Profil Malt du développeur"
             rel="noopener noreferrer">
             <i class="icons">
-              <img src="photos/malt_icone.webp" alt="Icone Malt de Yann Picot" />
+              <img src="assets/social-malt.svg" alt="Icône Malt" />
             </i>
           </a>
         </div>
 
       </section>
-
-      <footer>
-        <p>© 2023 I-Mergie. Tous droits réservés. Réalisé par Yann Picot.</p>
+        <!-- Pied de page avec copyright -->      <footer>
+        <p>© 2025 TechCorp Solutions. Tous droits réservés. Réalisé par Alexandre Martin.</p>
       </footer>
     </main>
 
-    <!-- <script src="countdown.js"></script> -->
+    <!-- Script JavaScript pour le countdown -->
+    <script src="countdown.js"></script>
   </body>
 </html>
