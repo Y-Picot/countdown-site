@@ -116,3 +116,10 @@ countdown-site/
 ```
 
 </details>
+## 👤 Auteur
+
+**Y-Picot** - [GitHub](https://github.com/Y-Picot)
+
+---
+
+⭐ Projet utile ? N'hésitez pas à lui donner une étoile !
