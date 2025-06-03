@@ -132,6 +132,7 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   /* Remplacez 20vh et 5vh par les hauteurs réelles de votre en-tête et de votre pied de page. */
   height: calc(100vh - 20vh - 5vh);
 }
