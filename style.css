@@ -1,5 +1,5 @@
 /* ===============================================
-   SITE DE COMPTE À REBOURS - I-MERGIE
+   SITE DE COMPTE À REBOURS
    Page d'attente avec countdown jusqu'au lancement
    =============================================== */
 
@@ -18,13 +18,13 @@ body {
 /* Polices pour les titres principaux */
 main h1,
 header h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Polices pour les sous-titres */
 main h2,
 header h2 {
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: Hind Vadodara, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -40,10 +40,33 @@ main p {
 /* Polices pour les paragraphes */
 main p,
 header p {
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: Hind Vadodara, sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 300;
+}
+
+/* ===============================================
+   PIED DE PAGE
+   =============================================== */
+
+/* Configuration du footer en bas de page */
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+/* Style du texte du footer */
+footer p {
+  font-family: Hind Vadodara, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: #ccc;
 }
 
 /* Animation d'arrière-plan avec image de fond */
@@ -54,7 +77,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
+  background-image: 
+    linear-gradient(
       to bottom,
       rgba(0 0 0 / 30%) 0%,
       rgba(0 0 0 / 90%) 100%
@@ -102,38 +126,13 @@ body::before {
   padding-left: 1rem;
 }
 
-/* ===============================================
-   PIED DE PAGE
-   =============================================== */
-
-/* Configuration du footer en bas de page */
-footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  padding-bottom: 1rem;
-}
-
-/* Style du texte du footer */
-footer p {
-  font-family: "Hind Vadodara", sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  color: #ccc;
-}
-
 /* Section principale du countdown */
 .countdown {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(
-    100vh - 20vh - 5vh
-  ); /* Remplacez 20vh et 5vh par les hauteurs réelles de votre en-tête et de votre pied de page. */
+  height: calc(100vh - 20vh - 5vh); /* Remplacez 20vh et 5vh par les hauteurs réelles de votre en-tête et de votre pied de page. */
 }
 
 /* Ligne de séparation */
@@ -142,12 +141,7 @@ footer p {
   margin: 2rem 0;
   border: none;
   height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255 255 255 / 50%),
-    transparent
-  );
+  background: linear-gradient(to right, transparent, rgba(255 255 255 / 50%), transparent);
 }
 
 /* Timer - Styles pour le compteur de temps */
@@ -181,7 +175,7 @@ footer p {
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0 0 0 / 80%);
 }
@@ -191,7 +185,7 @@ footer p {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #ccc;
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: Hind Vadodara, sans-serif;
   font-weight: 400;
 }
 
@@ -201,7 +195,7 @@ footer p {
   font-size: 1.1rem;
   opacity: 0.95;
   font-style: italic;
-  font-family: "Fanwood Text", sans-serif;
+  font-family: Fanwood Text, sans-serif;
   line-height: 1.3;
 }
 
